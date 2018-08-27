@@ -30,7 +30,7 @@ main{
 .scan{
     width: 90vw;
     height:80px;
-    background:linear-gradient(rgba(0,0,0,0),#7ff12a);
+    background:linear-gradient(rgba(0,0,0,0),#80f12a96);
     border-radius: 0px 0px 30px 30px; 
     margin-left: 10px;
     position:absolute;
