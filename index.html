@@ -18,51 +18,62 @@
 
 <body>
   <main id="Main" class="">
-    <div class="screw1"></div>
+    <!--SCREWS-->
+    <div class="screw screwPotTopRight"></div>
+    <div class="screw screwPotTopLeft"></div>
+    <div class="screw screwPotBottomLeft"></div>
+    <div class="screw screwPotBottomRight"></div>
+    <!--SCREEN-->
     <div id="screen">
-      <div class="screen-reflection col-12"></div>    
+      <div class="screen-reflectionSame screen-reflectionChange col-12"></div> 
+      <!--DropDown-->     
       <div class="dropdown col-11 offset-1">
-        <button class=" dropdown-toggle d-block d-md-none menu type="button" data-toggle="dropdown">ABOUT
-          <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li class="menu"><a  href="#">SKILLS</a></li>
-            <li class="menu"><a  href="#">PROYECT</a></li>
-            <li class="menu"><a  href="#">RADIO</a></li>
-          </ul>
-        </div>
-        <div class="row  borderHead ">
-          <div  class="col-2 offset-2 d-none d-md-block  ">
-            <button class=" menu">ABOUT</button>
-            <div class="hidebutton"></div>
-          </div>
-          <div class="col-2 d-none d-md-block ">
-            <button class=" menu ">SKILLS</button>
-            <div class="hidebutton"></div>
-          </div>
-          <div class="col-2 d-none d-md-block ">
-            <button class=" menu">PROJECTS</button>
-            <div class="hidebutton"></div>
-          </div>
-          <div class="col-2 d-none d-md-block ">
-            <button class=" menu  ">RADIO</button>
-            <div class="hidebutton"></div>
-          </div>        
-        </div>
-        <div class="scan col-12"></div>
+        <button class=" dropdown-toggle d-block d-md-none menuSame menuChange type="button" data-toggle="dropdown">ABOUT</button>
+        <ul class="dropdown-menu">
+          <li class="menuSame menuChange"><a class="link"  href="#">SKILLS</a></li>
+          <li class="menuSame menuChange"><a class="link" href="#">PROYECT</a></li>
+          <li class="menuSame menuChange"><a class="link" href="#">RADIO</a></li>
+        </ul>  
       </div>
-    <div class="screw2"></div>
-    <hr>
-    </main>
-
-    
-    <!--JS LINKS-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
-  </body>
+      <!--Header-->
+      <div class="row  header ">
+        <div  class="col-2 offset-2 d-none d-md-block  ">
+          <button class=" menuSame menuChange">ABOUT</button>
+          <div class="hidebutton"></div>
+        </div>
+        <div class="col-2 d-none d-md-block ">
+          <button class=" menuSame menuChange">SKILLS</button>
+          <div class="hidebutton"></div>
+        </div>
+        <div class="col-2 d-none d-md-block ">
+          <button class=" menuSame menuChange">PROJECTS</button>
+          <div class="hidebutton"></div>
+        </div>
+        <div class="col-2 d-none d-md-block ">
+          <button class=" menuSame menuChange  ">RADIO</button>
+          <div class="hidebutton"></div>
+        </div>        
+      </div>
+      <div class="scanSame scanDifference col-12"></div>
+    </div>
+    <hr class="lineSame lineChange">
+    <!--Content ABOUT-->
+    <div id="contentAbout">
+      <div class="row">
+        <div class="menuSame tags" id="">FrontEndDeveloper</div>
+      </div>
+    </div>
+  </main>
   
-  </html>
+  
+  <!--JS LINKS-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
