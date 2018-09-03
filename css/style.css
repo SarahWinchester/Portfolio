@@ -97,6 +97,16 @@ a{
     border-top: 3px solid rgb(91, 253, 105);
     
 }
+.hpBar{
+    border-color: 2px solid rgb(91, 253, 105);
+    display: inline-block;
+    /* width: 30vw;  */
+    height:2.5vh;
+}
+.footerBackground{
+    background:linear-gradient(150deg, rgb(36, 116, 43) ,#0f0f0f00);
+    background-repeat: no-repeat;   
+}
 @keyframes scan{
     from {top: 5vh;}
     to {top: 80vh;}
@@ -178,16 +188,27 @@ a{
     }
     .screen-reflectionChange{
         width: 90vw;
-        height:82vh;
+        height:85vh;
         
     }
     .lineChange{
         margin-top: 70px;
         width: 85vw;
     }
+    .tagFont{
+        font-size: 1.2rem;
+    }
+    .tagImage{
+       
+        height: 30vh;
+        width: 12vw;
+    }
+    .tagCenter{
+        margin-left: 40vw;
+    }
     @keyframes scan{
         from {top: 5vh;}
-        to {top: 82vh;}
+        to {top: 83vh;}
     }
 }      
 
