@@ -14,7 +14,7 @@ main{ /*Borde de pipboy, no comparte caracteristicas*/
     0 0 0 2px #3f3636,
     0 0 0 3px #292727,
     0 0 0 4px #111111;;
-    background-color: black;
+    background-color: #050805;
     height: 100vh;
     max-height: 100%;
 }  
@@ -62,16 +62,16 @@ main{ /*Borde de pipboy, no comparte caracteristicas*/
 a{
     text-decoration-color: none;
     text-decoration: none;
-    color: rgb(98, 189, 8)
+    color: rgb(94, 255, 105);
 }
 .menuSame{ /*fonts color and shadows for text*/
     margin-top: 2vh;
-    color: rgb(91, 253, 105);
+    color: rgb(94, 255, 105);
     font-weight: normal;
     background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
-    text-shadow: 2px 2px 3px rgb(91, 253, 105);    
+    text-shadow: 2px 2px 3px rgb(94, 255, 105);    
 }
 .scanSame{ /* moving scanner not sizing */
     height:80px;
@@ -94,24 +94,26 @@ a{
     border-radius:10px;
 }
 .lineSame{
-    border-top: 3px solid rgb(91, 253, 105);
+    border-top: 3px solid #5ef66b;
     
 }
 .hpBar{
-    border-color: 2px solid rgb(91, 253, 105);
+    border-color: 2px solid #5ef66b;
     display: inline-block;
-    /* width: 30vw;  */
     height:2.5vh;
 }
 .footerBackground{
-    background:linear-gradient(150deg, rgb(36, 116, 43) ,#0c9e0c00);
+    background:linear-gradient(150deg,rgb(39, 80, 37), rgb(36, 116, 43) ,#0c9e0c00);
     background-repeat: no-repeat;   
-    width: 10vw;
 }
 
 .tag{
-    background: rgba(53, 85, 4, 0.794);
+    background:rgb(39, 80, 37);
     width: 10vw;
+}
+.tag:hover{
+    background-color: #5ef66b;
+    color: rgb(39, 80, 37);
 }
 
 @keyframes scan{
@@ -242,19 +244,40 @@ a{
         margin-left: 50vh;
         margin-right: 50vh;
         font-size: 1.3rem;
-        height: 55vh;
+        position: relative;
+        height: 52vh;
     }
     .tagImg{
-        height: 30vh;
+        height: 25vh;
         width: 10vw;
     }
     .nameFont{
         font-size: 1.3rem;
+        margin-top: 7px;
+        
     }
     .footerContainer{
-        margin-top: 3vh;
-        margin-left: 8vw;
+        margin-top: 0vh;
+        margin-left: 5vw;
         font-size: 1.3rem;
+        
+    }
+    .fBgszHP{
+        height: 2rem;
+        width: 25vw;
+    }
+    .fBgszLVL{
+        width: 30vw;
+    }
+    .lvlBox{
+        height: 1rem;
+    }
+    .hpBar{
+        height: 3vh ;
+        width:   22vw;
+    }
+    .fBgszAP{
+        width: 25vw;
     }
     @keyframes scan{
         from {top: 5vh;}
