@@ -52,7 +52,7 @@ main{ /*Borde de pipboy, no comparte caracteristicas*/
     right: 45px;
 }
 .dropdown-menu{
-    background-color: transparent;
+    background-color: #050805;
 }
 .header{
     position: absolute;
@@ -145,15 +145,19 @@ a{
         margin-right: 4vh;
         margin-top: 0px;
         height: 55vh;
+        
     }
     .tagImg{
         height: 30vh;
         width: 25vw;
     }
     .tag{
-        background: rgba(53, 85, 4, 0.794);
         width: 22vw;
     }
+    .footerContainer{
+        visibility: hidden; 
+    }
+    
 }    
 @media (min-width: 768px) and (max-width: 992px)  { /*tablet*/
     
@@ -176,15 +180,47 @@ a{
         width: 80vw;
     }
     .cont1{
-        margin-left: 25vh;
-        margin-right: 25vh;
+        margin-left: 20vh;
+        margin-right: 20vh;
         margin-top: 0px;
-        height: 50vh;
+        height: 52vh;
+    }
+    .tag{
+        width: 11vw;
     }
     .tagImg{
-        height: 30vh;
-        width: 12vw;
+        height: 25vh;
+        width: 10vw;
     }
+    .nameFont{
+        font-size: 1.3rem;
+        margin-top: 7px;
+        
+    }
+    .footerContainer{
+        margin-top: 0vh;
+        margin-left: 5vw;
+        font-size: 1rem;
+        visibility: visible;
+        
+    }
+    .fBgszHP{
+        width: 17vw;
+    }
+    .fBgszLVL{
+        width: 28vw;
+    }
+    .lvlBox{
+        height: 1rem;
+    }
+    .hpBar{
+        height: 3vh ;
+        width:   18vw;
+    }
+    .fBgszAP{
+        width: 30vw;
+    }
+    
 }  
 @media (min-width: 992px) and (max-width:1200px)  { /*laptop*/
     .menuChange{
@@ -209,13 +245,40 @@ a{
         margin-left: 40vh;
         margin-right: 40vh;
         margin-top: 0px;
-        height: 50vh;
+        height: 52vh;
     }
     .tagImg{
         height: 30vh;
         width: 10vw;
     }
-    
+    .nameFont{
+        font-size: 1.3rem;
+        margin-top: 7px;
+        
+    }
+    .footerContainer{
+        margin-top: 0vh;
+        margin-left: 5vw;
+        font-size: 1.3rem;
+        
+    }
+    .fBgszHP{
+        height: 2rem;
+        width: 25vw;
+    }
+    .fBgszLVL{
+        width: 30vw;
+    }
+    .lvlBox{
+        height: 1rem;
+    }
+    .hpBar{
+        height: 3vh ;
+        width:   22vw;
+    }
+    .fBgszAP{
+        width: 25vw;
+    }
     
     @keyframes scan{
         from {top: 5vh;}
@@ -257,7 +320,7 @@ a{
         
     }
     .footerContainer{
-        margin-top: 0vh;
+        margin-top: 2vh;
         margin-left: 5vw;
         font-size: 1.3rem;
         
