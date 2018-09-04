@@ -104,9 +104,16 @@ a{
     height:2.5vh;
 }
 .footerBackground{
-    background:linear-gradient(150deg, rgb(36, 116, 43) ,#0f0f0f00);
+    background:linear-gradient(150deg, rgb(36, 116, 43) ,#0c9e0c00);
     background-repeat: no-repeat;   
+    width: 10vw;
 }
+
+.tag{
+    background: rgba(53, 85, 4, 0.794);
+    width: 10vw;
+}
+
 @keyframes scan{
     from {top: 5vh;}
     to {top: 80vh;}
@@ -131,6 +138,20 @@ a{
         margin-top: 0px;
         width: 58vw;
     }
+    .cont1{
+        margin-left: 4vh;
+        margin-right: 4vh;
+        margin-top: 0px;
+        height: 55vh;
+    }
+    .tagImg{
+        height: 30vh;
+        width: 25vw;
+    }
+    .tag{
+        background: rgba(53, 85, 4, 0.794);
+        width: 22vw;
+    }
 }    
 @media (min-width: 768px) and (max-width: 992px)  { /*tablet*/
     
@@ -152,6 +173,16 @@ a{
         margin-top: 43px;
         width: 80vw;
     }
+    .cont1{
+        margin-left: 25vh;
+        margin-right: 25vh;
+        margin-top: 0px;
+        height: 50vh;
+    }
+    .tagImg{
+        height: 30vh;
+        width: 12vw;
+    }
 }  
 @media (min-width: 992px) and (max-width:1200px)  { /*laptop*/
     .menuChange{
@@ -169,8 +200,20 @@ a{
     }
     .lineChange{
         margin-top: 52px;
+        margin-bottom: 3px;
         width: 80vw;
     }
+    .cont1{
+        margin-left: 40vh;
+        margin-right: 40vh;
+        margin-top: 0px;
+        height: 50vh;
+    }
+    .tagImg{
+        height: 30vh;
+        width: 10vw;
+    }
+    
     
     @keyframes scan{
         from {top: 5vh;}
@@ -195,16 +238,23 @@ a{
         margin-top: 70px;
         width: 85vw;
     }
-    .tagFont{
-        font-size: 1.2rem;
+    .cont1{
+        margin-left: 50vh;
+        margin-right: 50vh;
+        font-size: 1.3rem;
+        height: 55vh;
     }
-    .tagImage{
-       
+    .tagImg{
         height: 30vh;
-        width: 12vw;
+        width: 10vw;
     }
-    .tagCenter{
-        margin-left: 40vw;
+    .nameFont{
+        font-size: 1.3rem;
+    }
+    .footerContainer{
+        margin-top: 3vh;
+        margin-left: 8vw;
+        font-size: 1.3rem;
     }
     @keyframes scan{
         from {top: 5vh;}
