@@ -7,9 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--CSS and others-->
   
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.5.1/css/OverlayScrollbars.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+  crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
   crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
   
@@ -38,60 +40,196 @@
       <!--Header-->
       <div class="row  header ">
         <div  class="col-2 offset-2  d-none d-md-block  ">
-          <button class=" menuSame menuChange">ABOUT</button>
+          <button class=" menuSame menuChange menu">ABOUT</button>
           <div class="hidebutton"></div>
         </div>
         <div class="col-2 d-none d-md-block ">
-          <button class=" menuSame menuChange">SKILLS</button>
+          <button class=" menuSame menuChange menu">SKILLS</button>
           <div class="hidebutton"></div>
         </div>
         <div class="col-2 d-none d-md-block ">
-          <button class=" menuSame menuChange">PROJECTS</button>
+          <button class=" menuSame menuChange menu">PROJECTS</button>
           <div class="hidebutton"></div>
         </div>
-        <!-- <div class="col-2 d-none d-md-block ">
-          <button class=" menuSame menuChange  ">SOCIAL MEDIA</button>
-          <div class="hidebutton"></div>
-        </div>  -->
-        <div class="col-2 d-none d-md-block ">
-          <button class=" menuSame menuChange  ">RADIO</button>
+        <div class="col-2 d-none d-md-block menu ">
+          <button class=" menuSame menuChange radio menu ">RADIO</button>
           <div class="hidebutton"></div>
         </div>        
       </div>
       <div class="scanSame scanDifference col-12"></div>
     </div>
     <hr class="lineSame lineChange">
-    <!--Content ABOUT-->
-    <div class=" menuSame cont1 ">
-      <div class="menuSame tag frontEnd d-block text-center mx-auto d-block tagback">FrontEnd</div>
-      <div class="menuSame tag gamer d-inline-block text-center tagback">Gamer</div>
-      <div class="menuSame tag mom d-inline-block text-center float-right tagback">Mom</div>
-      <div><img class="responsive-img text-center mx-auto d-block tagImg" src="./assets/img/vaultgirl.png" ></div>
-      <div class="menuSame tag something d-inline-block text-center tagback">Roleplayer</div>
-      <div class="menuSame tag something2 d-inline-block text-center float-right tagback"> Chef</div>
-      <div class="menuSame tag justMe d-block text-center mx-auto d-block tagback">JustMe</div>
-    </div>
-    <!--Footer-->
-    <div class="menuSame nameFont text-center mx-auto d-block">INDIRA SARAHI RUIZ LOPEZ</div>
-    <div class=" footerContainer">
-      <div class="menuSame footerBackground d-inline-block fBgszHP">HP 90/90</div>
-      <!-- <div class=" d-inline-block lvlBox"> -->
-      <div class="menuSame footerBackground d-inline-block fBgszLVL">LEVEL 1 <div class="border hpBar hpBarSize d-inline-block"></div>
+    <section>
+      <!--Content about-->
+      <div class=" menuSame cont1  d-none"> <!--SHOW AFTER DONE erasing d-none-->
+        <div class="menuSame tag frontEnd d-block text-center mx-auto d-block tagback" data-toggle="tooltip" data-placement="bottom" title="Hooray!">FrontEnd</div>
+        <div class="menuSame tag gamer d-inline-block text-center tagback"data-toggle="tooltip" data-placement="bottom" title="Hooray!">Gamer</div>
+        <div class="menuSame tag mom d-inline-block text-center float-right tagback" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Mom</div>
+        <div><img class="responsive-img text-center mx-auto d-block tagImg" src="./assets/img/vaultgirl.png" data-toggle="tooltip" data-placement="bottom" title="Hooray!"></div>
+        <div class="menuSame tag something d-inline-block text-center tagback" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Roleplayer</div>
+        <div class="menuSame tag something2 d-inline-block text-center float-right tagback" data-toggle="tooltip" data-placement="bottom" title="Hooray!"> Chef</div>
+        <div class="menuSame tag justMe d-block text-center mx-auto d-block tagback" data-toggle="tooltip" data-placement="bottom" title="Hooray!">JustMe</div>
       </div>
-      <!-- </div> -->
-      <span class="menuSame footerBackground d-inline-block fBgszAP text-right">AP 70/70</span>
-    </div>
-  </main>
-  
-  
-  <!--JS LINKS-->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-  crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-  crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-  crossorigin="anonymous"></script>
-  <script src="./js/main.js"></script>
-</body>
-
-</html>
+      <!--SECTION SKILLS-->
+      <div class=" skillsContain row d-none" >
+        <div class=" col-6" id="skillScroll">
+          <ul class="listMenu">
+            <li class="menuSame">Javascript ES6</li>
+            <li class="menuSame"> CSS3</li>
+            <li class="menuSame">HTML5</li>
+            <li class="menuSame">Jquery</li>
+            <li class="menuSame">RESTful API</li>
+            <li class="menuSame">Bootstrap</li>
+            <li class="menuSame">Materialize</li>
+            <li class="menuSame">Node.js (basico)</li>
+            <li class="menuSame">Git</li>
+            <li class="menuSame">Firebase</li>
+            <li class="menuSame">SCRUM</li>
+            <li class="menuSame">AGILE</li>
+            <li class="menuSame">Justinmind</li>
+            <li class="menuSame">Photoshop CS6</li>
+            <li class="menuSame">Handlebars.js</li>
+            <li class="menuSame">Babel</li>
+          </ul>
+        </div>
+        <div class="row rowimage">
+          <div class=" col-12" id="imageSkill"><img class="responsive-img text-center mx-auto d-block   " src="./assets/img/vaultgirl.png" alt=""></div>
+        </div>
+        
+        
+      </div>
+      <!--SECTION PROJECTS-->
+      <div class="" id="projectContainer">
+        <div class="row">
+          <div class="col-lg-5 offset-lg-1 col-xs-12 imagesection ">
+            <img class="img-fluid pokedex" src="./assets/img/68747470733a2f2f692e696d6775722e636f6d2f415975745a4f462e706e67.png" alt="">
+          </div>
+          <div class="col-lg-5 col-xs-12 datasection singleProyect">
+            <h3 class="text-center menuSame">POKEDEX</h3>
+            <a class="menuSame d-block" href="https://github.com/SarahWinchester/Pokedex">Repository</a>
+            <a class="menuSame d-block" href="https://sarahwinchester.github.io/Pokedex/">DEMO</a>
+            <h5 class="menuSame text-center">TOOLS</h5>
+            <span class="menuSame">Javascript,</span>
+            <span class="menuSame">CSS3 ,</span>
+            <span class="menuSame">HTML5, </span>
+            <span class="menuSame">AJAX ,</span>
+            <span class="menuSame">JQuery , </span>
+            <span class="menuSame">Bootstrap , </span>
+            <span class="menuSame">Pokemon RESTful API .</span>
+            <div class="menuSame text-center">**Mobile Only**</div>
+            <p class="menuSame text-justify">This is a pokedex made it with Javascript, Jquery, Bootstrap, AJAX and the Pokemon RESTful API. <br><br>
+              You can find here a pokedex showing the first 20 pokemons , or you can find the pokemon what you need in the search bar from his correct name or with the pokemon Number<br><br>
+              Also you can find data of each pokemon you search, like type, height , weight even the sprites Normal and Shiny</p>
+            </div>
+            <img src="./assets/img/divider.png" class="img-fluid" alt="">
+            
+          </div>
+          <div class="row">
+            <div class="col-lg-5 offset-lg-1 col-xs-12  imagesection">
+              <img class="img-fluid pokedex" src="./assets/img/Zshop.png" alt="">
+            </div>
+            <div class="col-lg-5 col-xs-12  datasection singleProyect">
+              <h3 class="text-center menuSame">ZSHOP</h3>
+              <a class="menuSame d-block" href="https://github.com/SarahWinchester/Zhop-Ecommerce">Repository</a>
+              <a class="menuSame d-block" href="https://sarahwinchester.github.io/Zhop-Ecommerce/">DEMO</a>
+              <h5 class="menuSame text-center">TOOLS</h5>
+              <span class="menuSame">Javascript,</span>
+              <span class="menuSame">CSS3 ,</span>
+              <span class="menuSame">HTML5, </span>
+              <span class="menuSame">AJAX ,</span>
+              <span class="menuSame">JQuery , </span>
+              <span class="menuSame">Bootstrap , </span>
+              <span class="menuSame">MercadoLibre RESTful API ,</span>
+              <span class="menuSame">PAYPAL Sandbox RESTful API,</span>
+              <div class="menuSame text-center">**Web**</div>
+              <p class="menuSame text-justify">Z-shop is an e-Commerce dedicated to people who likes alternative fashion, like Gothic, Steampunk, CyberPunk.<br><br>
+                You will find here a main section based in Gothic Fashion, but i have 3 predeterminated categories, This api is able to find anything in MercadoLibre , and you can try make a purchase with the Paypal API and his Sandbox without risk</p>
+              </div>
+              <img src="./assets/img/divider.png" class="img-fluid" alt="">
+            </div>
+            <div class="row">
+              <div class="col-lg-5 offset-lg-1 col-xs-12  imagesection">
+                <img class="img-fluid pokedex" src="./assets/img/mini-logo.jpg" alt="">
+              </div>
+              <div class="col-lg-5 col-xs-12  datasection singleProyect">
+                <h3 class="text-center menuSame">MINI MONDAY</h3>
+                <a class="menuSame d-block" href="https://github.com/SarahWinchester/MyPage">Repository</a>
+                <a class="menuSame d-block" href="https://sarahwinchester.github.io/MyPage/">DEMO</a>
+                <h5 class="menuSame text-center">TOOLS</h5>
+                <span class="menuSame">CSS3 ,</span>
+                <span class="menuSame">HTML5, </span>
+                <span class="menuSame">Custom Grid , </span>
+                <div class="menuSame text-center">**Web and Mobile**</div>
+                <p class="menuSame text-justify">Personal Page about a strong hobbie, Miniature Painting.<br><br>
+                  MiniMonday is a group who loves paint miniatures, from Boardgames (Like Dungeons and Dragons Adventure System) and WarGames ( Like Warhammer) we share paints, brushes and Tips for miniature painting improving </p>
+                </div>
+                <img src="./assets/img/divider.png" class="img-fluid" alt="">
+              </div>
+              <div class="row">
+                <div class="col-lg-5 offset-lg-1 col-xs-12  imagesection">
+                  <img class="img-fluid pokedex" width="300px" src="./assets/img/name_gen_kitty_x2.png" alt="">
+                </div>
+                <div class="col-lg-5 col-xs-12  datasection singleProyect">
+                  <h3 class="text-center menuSame">NEKO NEKO DAY</h3>
+                  <a class="menuSame d-block" href="https://github.com/SarahWinchester/NekoNekoDay">Repository</a>
+                  <a class="menuSame d-block" href="https://sarahwinchester.github.io/NekoNekoDay/">DEMO</a>
+                  <h5 class="menuSame text-center">TOOLS</h5>
+                  <span class="menuSame">CSS3 ,</span>
+                  <span class="menuSame">HTML5, </span>
+                  <span class="menuSame">Custom Grid , </span>
+                  <span class="menuSame"> Media Query</span>
+                  <div class="menuSame text-center">**Web and Mobile**</div>
+                  <p class="menuSame text-justify">Just a little excercice with Media Queries, if you change the size of the window, the cat will change with the day </p>
+                </div>
+                <img src="./assets/img/divider.png" class="img-fluid" alt="">
+              </div>
+              <div class="row">
+                <div class="col-lg-5 offset-lg-1 col-xs-12  imagesection">
+                  <img class="img-fluid pokedex" width="300px" src="./assets/img/name_gen_kitty_x2.png" alt="">
+                </div>
+                <div class="col-lg-5 col-xs-12  datasection singleProyect">
+                  <h3 class="text-center menuSame">Lol4NewBees</h3>
+                  <a class="menuSame d-block" href="https://github.com/SarahWinchester/Lol4NewBees">Repository</a>
+                  <a class="menuSame d-block" href="https://sarahwinchester.github.io/Lol4NewBees/">DEMO</a>
+                  <h5 class="menuSame text-center">TOOLS</h5>
+                  <span class="menuSame">Javascript, </span>
+                  <span class="menuSame">CSS3 ,</span>
+                  <span class="menuSame">HTML5, </span>
+                  <span class="menuSame">Bootstrap , </span>
+                  <span class="menuSame">FireBase,</span>
+                  <span class="menuSame">JSON </span>
+                  <div class="menuSame text-center">**Mobile Only**</div>
+                  <p class="menuSame text-justify">Hackathon Product, made in squad, with Orquidea Campos , Miriam Perez and myself, the v2.0 is made just for me<br>
+                    The principal theme of this app, is make a helper to all people who try to understand this videogame (MOBA), is a hardcore game and everyone is expecting  you do your best  to win the match; But the half of the time you do not anything about it, What champion should i use? what is a rune? what is a lane?, lol4newbees  </p>
+                  </div>
+                  <img src="./assets/img/divider.png" class="img-fluid" alt="">
+                </div>
+              </div>
+              
+              <!--Footer-->
+              <div class="menuSame nameFont text-center mx-auto  d-none ">INDIRA SARAHI RUIZ LOPEZ</div> <!--CHANGE d-none por d-block-->
+              <div class=" footerContainer">
+                <div class="menuSame footerBackground d-inline-block fBgszHP">HP 90/90</div>
+                <!-- <div class=" d-inline-block lvlBox"> -->
+                  <div class="menuSame footerBackground d-inline-block fBgszLVL">LEVEL 1 <div class="border hpBar hpBarSize d-inline-block"></div>
+                </div>
+                <!-- </div> -->
+                <span class="menuSame footerBackground d-inline-block fBgszAP text-right">AP 70/70</span>
+              </div>
+            </section>
+            
+          </main>
+          
+          
+          <!--JS LINKS-->
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.5.1/js/jquery.overlayScrollbars.min.js"></script>
+          <script src="./js/main.js"></script>
+        </body>
+        
+        </html>

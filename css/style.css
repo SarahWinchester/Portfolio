@@ -1,5 +1,7 @@
 body{ /* Color de fondo*/
     background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+    
 }
 main{ /*Borde de pipboy, no comparte caracteristicas*/
     margin: 10px;
@@ -83,7 +85,7 @@ a{
     animation-duration:4s;
     animation-iteration-count: infinite;
     top:-85px;
-    z-index:99;
+    z-index:1;
     opacity:0.25;
 }
 .screen-reflectionSame{/*gradiant for the screen but not size*/
@@ -115,7 +117,18 @@ a{
     background-color: #5ef66b;
     color: rgb(39, 80, 37);
 }
+#skillScroll{
+    overflow: auto;
+    
+}
 
+.skillsContain{
+    position: relative;
+}
+li:hover{
+    background-color: #5ef66b;
+    color: rgb(39, 80, 37);
+}
 @keyframes scan{
     from {top: 5vh;}
     to {top: 80vh;}
@@ -157,12 +170,52 @@ a{
     .footerContainer{
         visibility: hidden; 
     }
+    #skillScroll{
+        display: inline-block;
+        height: 60vh;
+        width: 40vw;
+    }
+    #imageSkill{
+        display: grid;
+        visibility: hidden;
+        height: 60vh;
+        width: 30vw;
+    }
     
+    .listMenu{
+        font-size: 1.5rem;
+        font-family:'Roboto', sans-serif;
+        font-weight: 200;
+        list-style-type: none;
+    }
+    #projectContainer{
+        margin-left: 3vh;
+        margin-right: 3vh;
+        height: 60vh;
+    }
+    .imagesection{
+        height: 50vh;
+    }
+    .datasection{
+        height: 50vh;
+        border-bottom-color: #5ef66b
+    }
+    .pokedex{
+        margin-top: 10vh;
+    }
+
 }    
 @media (min-width: 768px) and (max-width: 992px)  { /*tablet*/
     
     .menuChange{
         font-size: 1.2rem
+    }
+    .menu{
+        font-size: 1.5;
+        font-weight: 500;
+    }
+    .radio{
+        margin-left: 5vw;
     }
     .scanDifference{
         width: 82% ;
@@ -202,6 +255,7 @@ a{
         margin-left: 5vw;
         font-size: 1rem;
         visibility: visible;
+        position: absolute;
         
     }
     .fBgszHP{
@@ -220,11 +274,52 @@ a{
     .fBgszAP{
         width: 30vw;
     }
-    
+    #skillScroll{
+        margin-left: 5vw;
+        margin-right: 2vw;
+        display: inline-block;
+        height: 60vh;
+        width: 35vw;
+    }
+    #imageSkill{
+        display: grid;
+        visibility: visible;
+        height: 60vh;
+        width: 30vw;
+    }
+ 
+    .listMenu{
+        font-size: 1.5rem;
+        font-family:'Roboto', sans-serif;
+        font-weight: 200;
+        list-style-type: none;
+    }
+    #projectContainer{
+        margin-left: 3vh;
+        margin-right: 3vh;
+        height: 60vh;
+    }
+    .imagesection{
+        height: 50vh;
+    }
+    .datasection{
+        height: 50vh;
+        border-bottom-color: #5ef66b
+    }
+    .pokedex{
+        margin-top: 10vh;
+    }
 }  
 @media (min-width: 992px) and (max-width:1200px)  { /*laptop*/
     .menuChange{
         font-size: 1.5rem
+    }
+    .menu{
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    .radio{
+        margin-left:5vw;
     }
     .scanDifference{
         width: 86vw ;
@@ -279,15 +374,56 @@ a{
     .fBgszAP{
         width: 25vw;
     }
+    #skillScroll{
+        margin-left: 5vw;
+        margin-right: 2vw;
+        display: inline-block;
+        height: 60vh;
+        width: 35vw;
+    }
+    #imageSkill{
+        display: grid;
+        height: 60vh;
+        width: 30vw;
+    }
+    
+    .listMenu{
+        font-size: 1.5rem;
+        font-family:'Roboto', sans-serif;
+        font-weight: 200;
+        list-style-type: none;
+    }
     
     @keyframes scan{
         from {top: 5vh;}
         to {top: 83vh;}
     }
+    #projectContainer{
+        margin-left: 3vh;
+        margin-right: 3vh;
+        height: 60vh;
+    }
+    .imagesection{
+        height: 50vh;
+    }
+    .datasection{
+        height: 50vh;
+        border-bottom-color: #5ef66b
+    }
+    .pokedex{
+        margin-top: 5vh;
+    }
 }    
 @media (min-width: 1200px)  { /*Laptop Large*/
     .menuChange{
-        font-size: 2rem
+        font-size: 2rem;
+    }
+    .menu{
+        font-size: 2.3;
+        font-weight: 500;
+    }
+    .radio{
+        margin-left: 5vw;
     }
     .scanDifference {
         width: 90vw ;
@@ -341,6 +477,43 @@ a{
     }
     .fBgszAP{
         width: 25vw;
+    }
+    #skillScroll{
+        margin-left: 5vw;
+        margin-right: 2vw;
+        display: inline-block;
+        height: 60vh;
+        width: 35vw;
+    }
+    #imageSkill{
+        display: grid;
+        
+        height: 60vh;
+        width: 30vw;
+    }
+    .skillsContain{
+        margin-top: 2vh;
+    }
+    .listMenu{
+        font-size: 1.5rem;
+        font-family:'Roboto', sans-serif;
+        font-weight: 200;
+        list-style-type: none;
+    }
+    #projectContainer{
+        margin-left: 3vh;
+        margin-right: 3vh;
+        height: 60vh;
+    }
+    .imagesection{
+        height: 50vh;
+    }
+    .datasection{
+        height: 50vh;
+        border-bottom-color: #5ef66b
+    }
+    .pokedex{
+        margin-top: 10vh;
     }
     @keyframes scan{
         from {top: 5vh;}
