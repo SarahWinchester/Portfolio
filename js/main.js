@@ -1,3 +1,8 @@
+//This is the tooltip init
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+//Those are the instance for scrollbar
 var instance = $("#skillScroll").overlayScrollbars({className: "os-theme-light" ,
 resize               : "none",
 sizeAutoCapable      : true,

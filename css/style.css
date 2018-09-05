@@ -129,6 +129,23 @@ li:hover{
     background-color: #5ef66b;
     color: rgb(39, 80, 37);
 }
+.video-container {
+    position: relative;
+    height: 60vh; 
+    overflow: hidden;
+    margin-left: 15vw;
+    margin-right: 10vw;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
 @keyframes scan{
     from {top: 5vh;}
     to {top: 80vh;}
@@ -194,7 +211,7 @@ li:hover{
         height: 60vh;
     }
     .imagesection{
-        height: 50vh;
+        height: 25vh;
     }
     .datasection{
         height: 50vh;
@@ -203,7 +220,7 @@ li:hover{
     .pokedex{
         margin-top: 10vh;
     }
-
+    
 }    
 @media (min-width: 768px) and (max-width: 992px)  { /*tablet*/
     
@@ -282,12 +299,16 @@ li:hover{
         width: 35vw;
     }
     #imageSkill{
-        display: grid;
+        position: relative;
         visibility: visible;
         height: 60vh;
         width: 30vw;
     }
- 
+    #textSkills{
+        width: 50vw;
+        height: 15vh;
+    }
+    
     .listMenu{
         font-size: 1.5rem;
         font-family:'Roboto', sans-serif;
@@ -459,6 +480,7 @@ li:hover{
         margin-top: 2vh;
         margin-left: 5vw;
         font-size: 1.3rem;
+       
         
     }
     .fBgszHP{
