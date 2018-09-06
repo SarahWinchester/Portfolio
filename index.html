@@ -19,6 +19,9 @@
 </head>
 
 <body>
+  <audio>
+    <source src="./assets/sound/pipboy_select.mp3"></source>
+  </audio>
   <main id="Main" class="">
     <!--SCREWS-->
     <div class="screw screwPotTopRight"></div>
@@ -32,26 +35,26 @@
       <div class="dropdown col-11 offset-1">
         <button class=" dropdown-toggle d-block d-md-none menuSame menuChange type="button" data-toggle="dropdown">ABOUT</button>
         <ul class="dropdown-menu">
-          <li class="menuSame menuChange"><a class="link"  href="#">SKILLS</a></li>
-          <li class="menuSame menuChange"><a class="link" href="#">PROJECT</a></li>
-          <li class="menuSame menuChange"><a class="link" href="#">SOCIAL MEDIA</a></li>
+          <li class="menuSame menuChange link"><a class="link" data-link="first"  href="#">SKILLS</a></li>
+          <li class="menuSame menuChange link"><a class="link" data-link="second" href="#">PROJECT</a></li>
+          <li class="menuSame menuChange link"><a class="link" href="#">SOCIAL MEDIA</a></li>
         </ul>  
       </div>
       <!--Header-->
       <div class="row  header ">
-        <div  class="col-2 offset-2  d-none d-md-block  ">
-          <button class=" menuSame menuChange menu">ABOUT</button>
+        <div  class="col-2 offset-2  d-none d-md-block link" id="aboutButton" data-link="first">
+          <button class=" menuSame menuChange menu link " >ABOUT</button>
           <div class="hidebutton"></div>
         </div>
-        <div class="col-2 d-none d-md-block ">
-          <button class=" menuSame menuChange menu">SKILLS</button>
+        <div class="col-2 d-none d-md-block link "data-link="second" id="skillsButton">
+          <button class=" menuSame menuChange link menu " >SKILLS</button>
           <div class="hidebutton"></div>
         </div>
-        <div class="col-2 d-none d-md-block ">
-          <button class=" menuSame menuChange menu">PROJECTS</button>
+        <div class="col-2 d-none d-md-block link "data-link="third" id="projectButton">
+          <button class=" menuSame menuChange menu ">PROJECTS</button>
           <div class="hidebutton"></div>
         </div>
-        <div class="col-2 d-none d-md-block menu ">
+        <div class="col-2 d-none d-md-block menu  link"data-link="fourth" id="radioButton">
           <button class=" menuSame menuChange radio menu ">RADIO</button>
           <div class="hidebutton"></div>
         </div>        
@@ -59,169 +62,168 @@
       <div class="scanSame scanDifference col-12"></div>
     </div>
     <hr class="lineSame lineChange">
-    <section>
-      <!--Content about-->
-      <div class=" menuSame cont1  "> <!--SHOW AFTER DONE erasing d-none-->
-        <div class="menuSame tag frontEnd d-block text-center mx-auto d-block tagback" data-toggle="tooltip" data-placement="bottom" title="I learn in Laboratoria as my first shot in the IT world">FrontEnd</div>
-        <div class="menuSame tag gamer d-inline-block text-center tagback"data-toggle="tooltip" data-placement="bottom" title="My Passion are my videogames im a gamer since i had 3 years old , and now im a PC gamer, my favorite game, as you see is Fallout">Gamer</div>
-        <div class="menuSame tag mom d-inline-block text-center float-right tagback" data-toggle="tooltip" data-placement="bottom" title="I have a 2 year old kid , his name is Sheitan, is a cute little ball of blond curly hair">Mom</div>
-        <div><img class="img-fluid text-center mx-auto d-block tagImg" src="./assets/img/sarah1.png" data-toggle="tooltip" data-placement="bottom" title="I born in 23 of April in 1986 in Monterrey NuevoLeon Mexico, i grew up in the company of my mother,my grandma and grandpa"></div>
-        <div class="menuSame tag something d-inline-block text-center tagback" data-toggle="tooltip" data-placement="bottom" title="I love D&D , WoD and other roleplaying games, im also a master in WoD, my speciality is Werewolf the apocalypse">Roleplayer</div>
-        <div class="menuSame tag something2 d-inline-block text-center float-right tagback" data-toggle="tooltip" data-placement="bottom" title="Originaly, i studied Gastronomy, with speciality in bakery, patisserie and japanese food "> Chef</div>
-        <div class="menuSame tag justMe d-block text-center mx-auto d-block tagback" data-toggle="tooltip" data-placement="bottom" title="Im a teacher in miniature painting, i love boardgames i have almost 300 of them , comic books. I want to learn alot about this world i'm really happy and i feel i finally found my place, i want to learn C# and C++ and make some videogames, my dream is work for Zenimax (Bathesda Games)">JustMe</div>
-      </div>
-      <!--SECTION SKILLS-->
-      <div class=" skillsContain row d-none" >
-        <div class=" col-6" id="skillScroll">
-          <ul class="listMenu">
-            <li class="menuSame">Javascript ES6</li>
-            <li class="menuSame"> CSS3</li>
-            <li class="menuSame">HTML5</li>
-            <li class="menuSame">Jquery</li>
-            <li class="menuSame">RESTful API</li>
-            <li class="menuSame">Bootstrap</li>
-            <li class="menuSame">Materialize</li>
-            <li class="menuSame">Node.js (basico)</li>
-            <li class="menuSame">Git</li>
-            <li class="menuSame">Firebase</li>
-            <li class="menuSame">SCRUM</li>
-            <li class="menuSame">AGILE</li>
-            <li class="menuSame">Justinmind</li>
-            <li class="menuSame">Photoshop CS6</li>
-            <li class="menuSame">Handlebars.js</li>
-            <li class="menuSame">Babel</li>
-          </ul>
+    <section >
+      <section id="sectionContent">
+        <!--Content about-->
+        <div class=" menuSame cont1 textWord_about " id="aboutContent" data-link="first"> <!--SHOW AFTER DONE erasing d-none-->
+          <div class="menuSame tag frontEnd d-block text-center mx-auto d-block tagback" data-toggle="tooltip" data-placement="bottom" title="I learn in Laboratoria as my first shot in the IT world">FrontEnd</div>
+          <div class="menuSame tag gamer d-inline-block text-center tagback"data-toggle="tooltip" data-placement="bottom" title="My Passion are my videogames im a gamer since i had 3 years old , and now im a PC gamer, my favorite game, as you see is Fallout">Gamer</div>
+          <div class="menuSame tag mom d-inline-block text-center float-right tagback" data-toggle="tooltip" data-placement="bottom" title="I have a 2 year old kid , his name is Sheitan, is a cute little ball of blond curly hair">Mom</div>
+          <div><img class="img-fluid text-center mx-auto d-block tagImg" src="./assets/img/sarah1.png" data-toggle="tooltip" data-placement="bottom" title="I born in 23 of April in 1986 in Monterrey NuevoLeon Mexico, i grew up in the company of my mother,my grandma and grandpa"></div>
+          <div class="menuSame tag something d-inline-block text-center tagback" data-toggle="tooltip" data-placement="bottom" title="I love D&D , WoD and other roleplaying games, im also a master in WoD, my speciality is Werewolf the apocalypse">Roleplayer</div>
+          <div class="menuSame tag something2 d-inline-block text-center float-right tagback" data-toggle="tooltip" data-placement="bottom" title="Originaly, i studied Gastronomy, with speciality in bakery, patisserie and japanese food "> Chef</div>
+          <div class="menuSame tag justMe d-block text-center mx-auto d-block tagback" data-toggle="tooltip" data-placement="bottom" title="Im a teacher in miniature painting, i love boardgames i have almost 300 of them , comic books. I want to learn alot about this world i'm really happy and i feel i finally found my place, i want to learn C# and C++ and make some videogames, my dream is work for Zenimax (Bathesda Games)">JustMe</div>
         </div>
-        <div class="row rowimage">
-          <div class=" col-12" id="imageSkill"><img class="img-fluid text-center mx-auto d-block   " src="./assets/img/SarahFallout.png" alt="">
-            <div class="row rowimage" id="textSkill">
-              <div class="col-12 menuSame singleProyect text-justify  ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At animi quam repellendus fuga similique numquam suscipit asperiores, voluptates ab hic mollitia maiores odit. Voluptatibus laboriosam, optio laudantium blanditiis eius unde.
-                Assumenda fugit nam cupiditate debitis repudiandae voluptatum hic, inventore quos iusto tempora amet accusantium nihil architecto sapiente aut aperiam iure quam ipsum dignissimos ad eveniet. Sint ullam quae accusamus error.
-                Fugit adipisci tempore dolorum quae at natus porro repudiandae ut fugiat harum. Qui iure nihil ad, a atque, ut enim quae quaerat ipsa error laboriosam soluta minus, necessitatibus natus molestiae!
-                Aperiam cumque molestias, temporibus nostrum eos maxime qui. Quos, quod quia rem debitis, ipsa eum voluptates architecto laborum deleniti quaerat possimus aspernatur fugit quo distinctio iusto nobis nemo accusantium. Sit!
-                Reiciendis accusamus provident rerum repellendus, asperiores consectetur ipsam quos ab itaque minus atque assumenda delectus beatae fugit aliquid aut officiis repudiandae obcaecati eos corporis, quae dolore excepturi magni exercitationem. Adipisci?
-                Necessitatibus eaque fuga, molestias sunt consequatur ipsum obcaecati, impedit officiis aut totam excepturi quidem nemo enim nostrum doloremque perspiciatis officia accusamus harum cupiditate animi eligendi magnam facere porro repudiandae. Architecto.
-                Explicabo placeat ex soluta voluptatum perferendis! Autem tempora sunt est pariatur. Animi tempora vitae vero cum placeat adipisci. Natus, commodi reiciendis nostrum perferendis quos sunt neque vel et non voluptas.
-                Rerum natus labore incidunt qui similique inventore facilis odit, nihil reiciendis laborum repellendus rem enim officiis voluptatum unde quo ex quis alias soluta ipsum voluptas nostrum nemo exercitationem libero. Maiores.
-                Est minus libero iusto distinctio ipsum dolorem? Perspiciatis sapiente aliquam molestias esse facilis consequuntur, ea sit eos sint? Est non rem tenetur suscipit accusamus, sed laboriosam unde voluptates nisi ratione.
-                Expedita debitis quae cupiditate? Deleniti earum voluptatem quae soluta sint fuga explicabo, dicta libero sit impedit perferendis illum, sed recusandae reiciendis repellendus veniam veritatis saepe sunt debitis, suscipit neque. Dolor?0
+        <!--SECTION SKILLS-->
+        <div class=" skillsContain row  textWord_about"  id="skillsContent" data-link="second">
+          <div class=" col-6" id="skillScroll">
+            <ul class="listMenu">
+              <li class="menuSame">Javascript ES6</li>
+              <li class="menuSame"> CSS3</li>
+              <li class="menuSame">HTML5</li>
+              <li class="menuSame">Jquery</li>
+              <li class="menuSame">RESTful API</li>
+              <li class="menuSame">Bootstrap</li>
+              <li class="menuSame">Materialize</li>
+              <li class="menuSame">Node.js (basico)</li>
+              <li class="menuSame">Git</li>
+              <li class="menuSame">Firebase</li>
+              <li class="menuSame">SCRUM</li>
+              <li class="menuSame">AGILE</li>
+              <li class="menuSame">Justinmind</li>
+              <li class="menuSame">Photoshop CS6</li>
+              <li class="menuSame">Handlebars.js</li>
+              <li class="menuSame">Babel</li>
+            </ul>
+          </div>
+          <div class="row rowimage">
+            <div class=" col-12" id="imageSkill"><img class="img-fluid text-center mx-auto d-block   " src="./assets/img/SarahFallout.png" alt="">
+              <div class="row rowimage" id="textSkill">
+                <div class="col-12 menuSame singleProyect text-justify  ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At animi quam repellendus fuga similique numquam suscipit asperiores, voluptates ab hic mollitia maiores odit. Voluptatibus laboriosam, optio laudantium blanditiis eius unde.
+                  Assumenda fugit nam cupiditate debitis repudiandae voluptatum hic, inventore quos iusto tempora amet accusantium nihil architecto sapiente aut aperiam iure quam ipsum dignissimos ad eveniet. Sint ullam quae accusamus error.
+                  Fugit adipisci tempore dolorum quae at natus porro repudiandae ut fugiat harum. Qui iure nihil ad, a atque, ut enim quae quaerat ipsa error laboriosam soluta minus, necessitatibus natus molestiae!
+                  Aperiam cumque molestias, temporibus nostrum eos maxime qui. Quos, quod quia rem debitis, ipsa eum voluptates architecto laborum deleniti quaerat possimus aspernatur fugit quo distinctio iusto nobis nemo accusantium. Sit!
+                  Reiciendis accusamus provident rerum repellendus, asperiores consectetur ipsam quos ab itaque minus atque assumenda delectus beatae fugit aliquid aut officiis repudiandae obcaecati eos corporis, quae dolore excepturi magni exercitationem. Adipisci?
+                  Necessitatibus eaque fuga, molestias sunt consequatur ipsum obcaecati, impedit officiis aut totam excepturi quidem nemo enim nostrum doloremque perspiciatis officia accusamus harum cupiditate animi eligendi magnam facere porro repudiandae. Architecto.
+                  Explicabo placeat ex soluta voluptatum perferendis! Autem tempora sunt est pariatur. Animi tempora vitae vero cum placeat adipisci. Natus, commodi reiciendis nostrum perferendis quos sunt neque vel et non voluptas.
+                  Rerum natus labore incidunt qui similique inventore facilis odit, nihil reiciendis laborum repellendus rem enim officiis voluptatum unde quo ex quis alias soluta ipsum voluptas nostrum nemo exercitationem libero. Maiores.
+                  Est minus libero iusto distinctio ipsum dolorem? Perspiciatis sapiente aliquam molestias esse facilis consequuntur, ea sit eos sint? Est non rem tenetur suscipit accusamus, sed laboriosam unde voluptates nisi ratione.
+                  Expedita debitis quae cupiditate? Deleniti earum voluptatem quae soluta sint fuga explicabo, dicta libero sit impedit perferendis illum, sed recusandae reiciendis repellendus veniam veritatis saepe sunt debitis, suscipit neque. Dolor?0
+                </div>
               </div>
             </div>
+          </div>   
+        </div>
+        <!--SECTION PROJECTS-->
+        <div class="textWord_about" data-link="third" id="projectContainer">
+          <div class="row">
+            <div class="col-lg-5 offset-lg-1 col-xs-12 imagesection ">
+              <img class="img-fluid pokedex" src="./assets/img/68747470733a2f2f692e696d6775722e636f6d2f415975745a4f462e706e67.png" alt="">
+            </div>
+            <div class="col-lg-5 col-xs-12 datasection singleProyect">
+              <h3 class="text-center menuSame">POKEDEX</h3>
+              <a class="menuSame d-block" href="https://github.com/SarahWinchester/Pokedex">Repository</a>
+              <a class="menuSame d-block" href="https://sarahwinchester.github.io/Pokedex/">DEMO</a>
+              <h5 class="menuSame text-center">TOOLS</h5>
+              <span class="menuSame">Javascript,</span>
+              <span class="menuSame">CSS3 ,</span>
+              <span class="menuSame">HTML5, </span>
+              <span class="menuSame">AJAX ,</span>
+              <span class="menuSame">JQuery , </span>
+              <span class="menuSame">Bootstrap , </span>
+              <span class="menuSame">Pokemon RESTful API .</span>
+              <div class="menuSame text-center">**Mobile Only**</div>
+              <p class="menuSame text-justify">This is a pokedex made it with Javascript, Jquery, Bootstrap, AJAX and the Pokemon RESTful API. <br><br>You can find here a pokedex showing the first 20 pokemons , or you can find the pokemon what you need in the search bar from his correct name or with the pokemon Number<br><br>Also you can find data of each pokemon you search, like type, height , weight even the sprites Normal and Shiny</p>
+            </div>
+            <img src="./assets/img/divider.png" class="img-fluid" alt="">   
+          </div>
+          <div class="row">
+            <div class="col-lg-5 offset-lg-1 col-xs-12  imagesection">
+              <img class="img-fluid pokedex" src="./assets/img/Zshop.png" alt="">
+            </div>
+            <div class="col-lg-5 col-xs-12  datasection singleProyect">
+              <h3 class="text-center menuSame">ZSHOP</h3>
+              <a class="menuSame d-block" href="https://github.com/SarahWinchester/Zhop-Ecommerce">Repository</a>
+              <a class="menuSame d-block" href="https://sarahwinchester.github.io/Zhop-Ecommerce/">DEMO</a>
+              <h5 class="menuSame text-center">TOOLS</h5>
+              <span class="menuSame">Javascript,</span>
+              <span class="menuSame">CSS3 ,</span>
+              <span class="menuSame">HTML5, </span>
+              <span class="menuSame">AJAX ,</span>
+              <span class="menuSame">JQuery , </span>
+              <span class="menuSame">Bootstrap , </span>
+              <span class="menuSame">MercadoLibre RESTful API ,</span>
+              <span class="menuSame">PAYPAL Sandbox RESTful API,</span>
+              <div class="menuSame text-center">**Web**</div>
+              <p class="menuSame text-justify">Z-shop is an e-Commerce dedicated to people who likes alternative fashion, like Gothic, Steampunk, CyberPunk.<br><br>You will find here a main section based in Gothic Fashion, but i have 3 predeterminated categories, This api is able to find anything in MercadoLibre , and you can try make a purchase with the Paypal API and his Sandbox without risk</p>
+            </div>
+            <img src="./assets/img/divider.png" class="img-fluid" alt="">
+          </div>
+          <div class="row">
+            <div class="col-lg-5 offset-lg-1 col-xs-12  imagesection">
+              <img class="img-fluid pokedex" src="./assets/img/mini-logo.jpg" alt="">
+            </div>
+            <div class="col-lg-5 col-xs-12  datasection singleProyect">
+              <h3 class="text-center menuSame">MINI MONDAY</h3>
+              <a class="menuSame d-block" href="https://github.com/SarahWinchester/MyPage">Repository</a>
+              <a class="menuSame d-block" href="https://sarahwinchester.github.io/MyPage/">DEMO</a>
+              <h5 class="menuSame text-center">TOOLS</h5>
+              <span class="menuSame">CSS3 ,</span>
+              <span class="menuSame">HTML5, </span>
+              <span class="menuSame">Custom Grid , </span>
+              <div class="menuSame text-center">**Web and Mobile**</div>
+              <p class="menuSame text-justify">Personal Page about a strong hobbie, Miniature Painting.<br><br>MiniMonday is a group who loves paint miniatures, from Boardgames (Like Dungeons and Dragons Adventure System) and WarGames ( Like Warhammer) we share paints, brushes and Tips for miniature painting improving </p>
+            </div>
+            <img src="./assets/img/divider.png" class="img-fluid" alt="">
+          </div>
+          <div class="row">
+            <div class="col-lg-5 offset-lg-1 col-xs-12  imagesection">
+              <img class="img-fluid pokedex" width="300px" src="./assets/img/name_gen_kitty_x2.png" alt="">
+            </div>
+            <div class="col-lg-5 col-xs-12  datasection singleProyect">
+              <h3 class="text-center menuSame">NEKO NEKO DAY</h3>
+              <a class="menuSame d-block" href="https://github.com/SarahWinchester/NekoNekoDay">Repository</a>
+              <a class="menuSame d-block" href="https://sarahwinchester.github.io/NekoNekoDay/">DEMO</a>
+              <h5 class="menuSame text-center">TOOLS</h5>
+              <span class="menuSame">CSS3 ,</span>
+              <span class="menuSame">HTML5, </span>
+              <span class="menuSame">Custom Grid , </span>
+              <span class="menuSame"> Media Query</span>
+              <div class="menuSame text-center">**Web and Mobile**</div>
+              <p class="menuSame text-justify">Just a little excercice with Media Queries, if you change the size of the window, the cat will change with the day </p>
+            </div>
+            <img src="./assets/img/divider.png" class="img-fluid" alt="">
+          </div>
+          <div class="row">
+            <div class="col-lg-5 offset-lg-1 col-xs-12  imagesection">
+              <img class="img-fluid pokedex" width="300px" src="./assets/img/porobees.png" alt="">
+            </div>
+            <div class="col-lg-5 col-xs-12  datasection singleProyect">
+              <h3 class="text-center menuSame">Lol4NewBees</h3>
+              <a class="menuSame d-block" href="https://github.com/SarahWinchester/Lol4NewBees">Repository</a>
+              <a class="menuSame d-block" href="https://sarahwinchester.github.io/Lol4NewBees/">DEMO</a>
+              <h5 class="menuSame text-center">TOOLS</h5>
+              <span class="menuSame">Javascript, </span>
+              <span class="menuSame">CSS3 ,</span>
+              <span class="menuSame">HTML5, </span>
+              <span class="menuSame">Bootstrap , </span>
+              <span class="menuSame">FireBase,</span>
+              <span class="menuSame">JSON </span>
+              <div class="menuSame text-center">**Mobile Only**</div>
+              <p class="menuSame text-justify">Hackathon Product, made in squad, with Orquidea Campos , Miriam Perez and myself, the v2.0 is made just for me<br>The principal theme of this app, is make a helper to all people who try to understand this videogame (MOBA), is a hardcore game and everyone is expecting  you do your best  to win the match; But the half of the time you do not anything about it, What champion should i use? what is a rune? what is a lane?, lol4newbees will fix this.  </p>
+            </div>
+            <img src="./assets/img/divider.png" class="img-fluid" alt="">
           </div>
         </div>
-        
-        
-        
-      </div>
-      <!--SECTION PROJECTS-->
-      <div class="d-none" id="projectContainer">
-        <div class="row">
-          <div class="col-lg-5 offset-lg-1 col-xs-12 imagesection ">
-            <img class="img-fluid pokedex" src="./assets/img/68747470733a2f2f692e696d6775722e636f6d2f415975745a4f462e706e67.png" alt="">
-          </div>
-          <div class="col-lg-5 col-xs-12 datasection singleProyect">
-            <h3 class="text-center menuSame">POKEDEX</h3>
-            <a class="menuSame d-block" href="https://github.com/SarahWinchester/Pokedex">Repository</a>
-            <a class="menuSame d-block" href="https://sarahwinchester.github.io/Pokedex/">DEMO</a>
-            <h5 class="menuSame text-center">TOOLS</h5>
-            <span class="menuSame">Javascript,</span>
-            <span class="menuSame">CSS3 ,</span>
-            <span class="menuSame">HTML5, </span>
-            <span class="menuSame">AJAX ,</span>
-            <span class="menuSame">JQuery , </span>
-            <span class="menuSame">Bootstrap , </span>
-            <span class="menuSame">Pokemon RESTful API .</span>
-            <div class="menuSame text-center">**Mobile Only**</div>
-            <p class="menuSame text-justify">This is a pokedex made it with Javascript, Jquery, Bootstrap, AJAX and the Pokemon RESTful API. <br><br>You can find here a pokedex showing the first 20 pokemons , or you can find the pokemon what you need in the search bar from his correct name or with the pokemon Number<br><br>Also you can find data of each pokemon you search, like type, height , weight even the sprites Normal and Shiny</p>
-          </div>
-          <img src="./assets/img/divider.png" class="img-fluid" alt="">   
-        </div>
-        <div class="row">
-          <div class="col-lg-5 offset-lg-1 col-xs-12  imagesection">
-            <img class="img-fluid pokedex" src="./assets/img/Zshop.png" alt="">
-          </div>
-          <div class="col-lg-5 col-xs-12  datasection singleProyect">
-            <h3 class="text-center menuSame">ZSHOP</h3>
-            <a class="menuSame d-block" href="https://github.com/SarahWinchester/Zhop-Ecommerce">Repository</a>
-            <a class="menuSame d-block" href="https://sarahwinchester.github.io/Zhop-Ecommerce/">DEMO</a>
-            <h5 class="menuSame text-center">TOOLS</h5>
-            <span class="menuSame">Javascript,</span>
-            <span class="menuSame">CSS3 ,</span>
-            <span class="menuSame">HTML5, </span>
-            <span class="menuSame">AJAX ,</span>
-            <span class="menuSame">JQuery , </span>
-            <span class="menuSame">Bootstrap , </span>
-            <span class="menuSame">MercadoLibre RESTful API ,</span>
-            <span class="menuSame">PAYPAL Sandbox RESTful API,</span>
-            <div class="menuSame text-center">**Web**</div>
-            <p class="menuSame text-justify">Z-shop is an e-Commerce dedicated to people who likes alternative fashion, like Gothic, Steampunk, CyberPunk.<br><br>You will find here a main section based in Gothic Fashion, but i have 3 predeterminated categories, This api is able to find anything in MercadoLibre , and you can try make a purchase with the Paypal API and his Sandbox without risk</p>
-          </div>
-          <img src="./assets/img/divider.png" class="img-fluid" alt="">
-        </div>
-        <div class="row">
-          <div class="col-lg-5 offset-lg-1 col-xs-12  imagesection">
-            <img class="img-fluid pokedex" src="./assets/img/mini-logo.jpg" alt="">
-          </div>
-          <div class="col-lg-5 col-xs-12  datasection singleProyect">
-            <h3 class="text-center menuSame">MINI MONDAY</h3>
-            <a class="menuSame d-block" href="https://github.com/SarahWinchester/MyPage">Repository</a>
-            <a class="menuSame d-block" href="https://sarahwinchester.github.io/MyPage/">DEMO</a>
-            <h5 class="menuSame text-center">TOOLS</h5>
-            <span class="menuSame">CSS3 ,</span>
-            <span class="menuSame">HTML5, </span>
-            <span class="menuSame">Custom Grid , </span>
-            <div class="menuSame text-center">**Web and Mobile**</div>
-            <p class="menuSame text-justify">Personal Page about a strong hobbie, Miniature Painting.<br><br>MiniMonday is a group who loves paint miniatures, from Boardgames (Like Dungeons and Dragons Adventure System) and WarGames ( Like Warhammer) we share paints, brushes and Tips for miniature painting improving </p>
-          </div>
-          <img src="./assets/img/divider.png" class="img-fluid" alt="">
-        </div>
-        <div class="row">
-          <div class="col-lg-5 offset-lg-1 col-xs-12  imagesection">
-            <img class="img-fluid pokedex" width="300px" src="./assets/img/name_gen_kitty_x2.png" alt="">
-          </div>
-          <div class="col-lg-5 col-xs-12  datasection singleProyect">
-            <h3 class="text-center menuSame">NEKO NEKO DAY</h3>
-            <a class="menuSame d-block" href="https://github.com/SarahWinchester/NekoNekoDay">Repository</a>
-            <a class="menuSame d-block" href="https://sarahwinchester.github.io/NekoNekoDay/">DEMO</a>
-            <h5 class="menuSame text-center">TOOLS</h5>
-            <span class="menuSame">CSS3 ,</span>
-            <span class="menuSame">HTML5, </span>
-            <span class="menuSame">Custom Grid , </span>
-            <span class="menuSame"> Media Query</span>
-            <div class="menuSame text-center">**Web and Mobile**</div>
-            <p class="menuSame text-justify">Just a little excercice with Media Queries, if you change the size of the window, the cat will change with the day </p>
-          </div>
-          <img src="./assets/img/divider.png" class="img-fluid" alt="">
-        </div>
-        <div class="row">
-          <div class="col-lg-5 offset-lg-1 col-xs-12  imagesection">
-            <img class="img-fluid pokedex" width="300px" src="./assets/img/porobees.png" alt="">
-          </div>
-          <div class="col-lg-5 col-xs-12  datasection singleProyect">
-            <h3 class="text-center menuSame">Lol4NewBees</h3>
-            <a class="menuSame d-block" href="https://github.com/SarahWinchester/Lol4NewBees">Repository</a>
-            <a class="menuSame d-block" href="https://sarahwinchester.github.io/Lol4NewBees/">DEMO</a>
-            <h5 class="menuSame text-center">TOOLS</h5>
-            <span class="menuSame">Javascript, </span>
-            <span class="menuSame">CSS3 ,</span>
-            <span class="menuSame">HTML5, </span>
-            <span class="menuSame">Bootstrap , </span>
-            <span class="menuSame">FireBase,</span>
-            <span class="menuSame">JSON </span>
-            <div class="menuSame text-center">**Mobile Only**</div>
-            <p class="menuSame text-justify">Hackathon Product, made in squad, with Orquidea Campos , Miriam Perez and myself, the v2.0 is made just for me<br>The principal theme of this app, is make a helper to all people who try to understand this videogame (MOBA), is a hardcore game and everyone is expecting  you do your best  to win the match; But the half of the time you do not anything about it, What champion should i use? what is a rune? what is a lane?, lol4newbees will fix this.  </p>
-          </div>
-          <img src="./assets/img/divider.png" class="img-fluid" alt="">
-        </div>
-      </div>
-      <!-- FALLOUT RADIO-->
-      <div class="d-none" id="falloutRadio">
-        <div class="d-none d-md-block" id="falloutRadio"><!--Add d-mdblock-->
-          <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/7fttFdVnRP8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
-        </div> 
-      </div>  
+        <!-- FALLOUT RADIO-->
+        <div class="textWord_about" data-link="fourth" id="falloutRadio">
+          <div class="d-none d-md-block"><!--Add d-mdblock-->
+            <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/7fttFdVnRP8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
+          </div> 
+        </div>  
+      </section>
       <!--Footer-->
-      <div class="menuSame nameFont text-center mx-auto  ">INDIRA SARAHI RUIZ LOPEZ</div> <!--CHANGE d-none por d-block-->
+      <div class="menuSame nameFont text-center mx-auto textWord_about " data-link="first" id="name">INDIRA SARAHI RUIZ LOPEZ</div>
       <div class=" footerContainer">
         <div class="menuSame footerBackground d-inline-block fBgszHP">HP 90/90</div>
         <!-- <div class=" d-inline-block lvlBox"> -->
@@ -236,7 +238,9 @@
   
   
   <!--JS LINKS-->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
   crossorigin="anonymous"></script>

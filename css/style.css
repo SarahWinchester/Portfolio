@@ -129,6 +129,12 @@ li:hover{
     background-color: #5ef66b;
     color: rgb(39, 80, 37);
 }
+.menu:focus{
+    border-left: #5ef66b solid 3px;
+    border-right: #5ef66b solid 3px;
+    outline:0;
+
+}
 .video-container {
     position: relative;
     height: 60vh; 
@@ -146,6 +152,7 @@ li:hover{
     width: 90%;
     height: 90%;
 }
+
 @keyframes scan{
     from {top: 5vh;}
     to {top: 80vh;}
@@ -167,7 +174,7 @@ li:hover{
         
     }
     .lineChange{
-        margin-top: 0px;
+        margin-bottom: 30px;
         width: 58vw;
     }
     .cont1{
@@ -468,19 +475,20 @@ li:hover{
         height: 52vh;
     }
     .tagImg{
-        height: 25vh;
+        height: 29vh;
         width: 10vw;
     }
     .nameFont{
-        font-size: 1.3rem;
-        margin-top: 7px;
-        
+        font-size: 1.3rem;        
+    }
+    #name{
+        margin-top: 3vh;
     }
     .footerContainer{
         margin-top: 2vh;
         margin-left: 5vw;
         font-size: 1.3rem;
-       
+        
         
     }
     .fBgszHP{
@@ -509,7 +517,6 @@ li:hover{
     }
     #imageSkill{
         display: grid;
-        
         height: 60vh;
         width: 30vw;
     }

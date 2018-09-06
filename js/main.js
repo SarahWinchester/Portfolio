@@ -1,3 +1,33 @@
+//sounds
+
+var audio = $("audio")[0];
+$(".listMenu").mouseover(function() {
+    audio.play();
+});
+$(".tag").mouseover(function() {
+    audio.play();
+});
+// $(".menu").mouseover(function() {
+//     audio.play();
+// });
+// button style
+
+// $(function() {
+//     $('#sectionContent').load('/css/templates/about.html');
+
+// }
+//     $('#sectionContent').html("")});
+
+
+//changin data
+$('.textWord_about').hide();
+
+$('.link').click(function() {
+    $('.textWord_about').hide();       
+    $('.textWord_about[data-link=' + $(this).data('link') + ']').fadeIn({
+        width: '200px'
+    }, 300);
+});
 //This is the tooltip init
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
@@ -35,7 +65,7 @@ scrollbars : {
     clickScrolling   : false,
     touchSupport     : true
 }}).overlayScrollbars();
-var instance2 = $(".singleProyect").overlayScrollbars({className: "os-theme-light" ,
+var instance3 = $(".singleProyect").overlayScrollbars({className: "os-theme-light" ,
 resize               : "none",
 sizeAutoCapable      : true,
 clipAlways           : true,
