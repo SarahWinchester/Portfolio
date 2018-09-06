@@ -13,7 +13,7 @@ $(".tag").mouseover(function() {
 // Changing data in div
 function hover(description) {
     console.log(description);
-    $('.singleProyect').html(description)
+    $('.boxdata').html(description)
 }
 
 // $(function() {
@@ -34,7 +34,10 @@ $('.link').click(function() {
 });
 //This is the tooltip init
 $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip(); 
+    $('[data-toggle="tooltip"]').tooltip();
+    $('.textWord_about[data-link=' + "first" + ']').fadeIn({
+        width: '200px'
+    }, 300); 
 });
 //Those are the instance for scrollbar
 var instance = $("#skillScroll").overlayScrollbars({className: "os-theme-light" ,
