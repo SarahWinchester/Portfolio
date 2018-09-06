@@ -10,7 +10,11 @@ $(".tag").mouseover(function() {
 // $(".menu").mouseover(function() {
 //     audio.play();
 // });
-// button style
+// Changing data in div
+function hover(description) {
+    console.log(description);
+    $('.singleProyect').html(description)
+}
 
 // $(function() {
 //     $('#sectionContent').load('/css/templates/about.html');
