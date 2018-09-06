@@ -16,11 +16,6 @@ function hover(description) {
     $('.boxdata').html(description)
 }
 
-// $(function() {
-//     $('#sectionContent').load('/css/templates/about.html');
-
-// }
-//     $('#sectionContent').html("")});
 
 
 //changin data

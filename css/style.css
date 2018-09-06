@@ -111,11 +111,15 @@ a{
 
 .tag{
     background:rgb(39, 80, 37);
+    cursor: url(foo.cur), url(/assets/img/minitentacle.png), auto;
     width: 10vw;
 }
 .tag:hover{
     background-color: #5ef66b;
     color: rgb(39, 80, 37);
+}
+.pointer{
+    cursor: url(foo.cur), url(/assets/img/minitentacle.png), auto;
 }
 #skillScroll{
     overflow: auto;
@@ -128,6 +132,10 @@ a{
 li:hover{
     background-color: #5ef66b;
     color: rgb(39, 80, 37);
+}
+.menu{
+    cursor: url(foo.cur), url(/assets/img/minitentacle.png), auto;
+
 }
 .menu:focus{
     border-left: #5ef66b solid 3px;
@@ -485,7 +493,6 @@ li:hover{
         margin-top: 3vh;
     }
     .footerContainer{
-        margin-top: 2vh;
         margin-left: 5vw;
         font-size: 1.3rem;
         
