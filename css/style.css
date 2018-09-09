@@ -58,13 +58,16 @@ main{ /*Borde de pipboy, no comparte caracteristicas*/
 }
 .header{
     position: absolute;
-    margin-left: 5vw;
+    /* margin-left: 5vw; */
     width: 80vw;
 } 
 a{
     text-decoration-color: none;
     text-decoration: none;
     color: rgb(94, 255, 105);
+}
+.socialMedia{
+    margin-top: 10vh;
 }
 .menuSame{ /*fonts color and shadows for text*/
     margin-top: 2vh;
