@@ -6,6 +6,9 @@ $(".listMenu").mouseover(function() {
 $(".tag").mouseover(function() {
     audio.play();
 });
+$(".menu").mouseover(function() {
+    audio.play();
+});
 // Changing data in div
 function hover(description) {
     console.log(description);
