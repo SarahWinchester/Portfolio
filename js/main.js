@@ -1,5 +1,4 @@
 //sounds
-
 var audio = $("audio")[0];
 $(".listMenu").mouseover(function() {
     audio.play();
@@ -7,17 +6,11 @@ $(".listMenu").mouseover(function() {
 $(".tag").mouseover(function() {
     audio.play();
 });
-// $(".menu").mouseover(function() {
-//     audio.play();
-// });
 // Changing data in div
 function hover(description) {
     console.log(description);
     $('.boxdata').html(description)
 }
-
-
-
 //changin data
 $('.textWord_about').hide();
 
