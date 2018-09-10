@@ -240,6 +240,10 @@ li:hover{
     .pokedex{
         margin-top: 10vh;
     }
+    #contactContent{
+        height: 50vh;
+        margin-left: 4vh;
+    }
  
 }    
 @media (min-width: 768px) and (max-width: 992px)  { /*tablet*/
@@ -557,6 +561,10 @@ li:hover{
     }
     .pokedex{
         margin-top: 10vh;
+    }
+    #contactContent{
+        height: 60vh;
+
     }
     @keyframes scan{
         from {top: 5vh;}
